@@ -23,6 +23,7 @@ const Slider = () => {
       },
     spaceBetween: 0,
     speed:2000,
+   effect: 'fade',
     responsive:true,
     loop: true,
   }
