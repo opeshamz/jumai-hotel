@@ -161,7 +161,7 @@ img {
 }
 
 .nav-links a:hover {
-    color: var(--primaryColor);
+    color: var(--mainWhite);
 }
 
 .show-nav {
