@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import defaultImg from '../images/room-2.jpeg';
+
 
 const Styledhero = styled.header `
 
