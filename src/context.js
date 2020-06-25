@@ -17,8 +17,6 @@ const RoomContext= React.createContext();
        price:0,
        minPrice:0,
        maxPrice:0,
-       minSize:0,
-       maxSize:0,
        breakfast:false,
        pets:false
 
@@ -32,7 +30,6 @@ const RoomContext= React.createContext();
         let rooms = this.formatData(response.items);
         let featuredRooms = rooms.filter(room => room.featured  === true);
         let maxPrice =Math.max(...rooms.map(item => item.price));
-        let maxSize =Math.max(...rooms.map(item => item.size));
         this.setState({
             rooms,
             featuredRooms,
@@ -42,7 +39,7 @@ const RoomContext= React.createContext();
             capacity:1,
             price: maxPrice,
             maxPrice,
-            maxSize,
+            
         });
  
          } catch (error) {
