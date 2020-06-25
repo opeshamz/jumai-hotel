@@ -91,7 +91,7 @@ const RoomContext= React.createContext();
         }
        
             tempRooms =tempRooms.filter(room=>room.price <= price);
-            tempRooms =tempRooms.filter(room=>room.size>=minSize && room.size<=maxSize);
+            
             if(breakfast){
                 tempRooms =tempRooms.filter(room=>room.breakfast===true);
             };
